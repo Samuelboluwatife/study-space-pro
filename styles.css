@@ -1240,13 +1240,22 @@ textarea.lp-contact-input {
     grid-template-columns: 1fr auto;
     gap: 0.5rem;
     padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .lp-nav-links,
   .lp-nav-actions .lp-btn-login {
     display: none;
   }
   .lp-nav-actions .lp-btn-signup {
-    display: flex;
+    display: none;
+  }
+  .lp-nav-actions {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .lp-hamburger {
     display: flex;

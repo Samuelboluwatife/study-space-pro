@@ -281,6 +281,19 @@ body {
   flex-direction: column;
 }
 
+/* Base button reset */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+}
+
 /* ── All pages: hidden by default, stacked in place ── */
 .page {
   display: none;
@@ -1390,6 +1403,36 @@ textarea.lp-contact-input {
   padding: 13px;
   font-size: 0.95rem;
   margin-top: 0.5rem;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font);
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+.btn-primary:hover {
+  background: var(--accent-hover, #0d1b2e);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background: var(--bg2);
+  color: var(--text1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-secondary:hover {
+  background: var(--bg3);
+  border-color: var(--accent);
 }
 .auth-switch {
   text-align: center;
